@@ -70,13 +70,13 @@ def notify_closing():
         open_date = "в понедельник" if weekday == 4 else "завтра"
         bot.send_message(chat_id, f"Уважаемые заказчики и подрядчики Krasbau.\nЧат закрывается через 20 минут, откроется {open_date} в 9:00 и сможете снова задать свои вопросы и делиться фотоотчетом.")
 
-schedule.every().day.at("17:40").do(notify_closing)
-schedule.every().day.at("18:00").do(close_chat)
-schedule.every().monday.at("09:00").do(open_chat)
-schedule.every().tuesday.at("09:00").do(open_chat)
-schedule.every().wednesday.at("09:00").do(open_chat)
-schedule.every().thursday.at("09:00").do(open_chat)
-schedule.every().friday.at("09:00").do(open_chat)
+schedule.every().day.at("21:40").do(notify_closing)
+schedule.every().day.at("22:00").do(close_chat)
+schedule.every().monday.at("13:00").do(open_chat)
+schedule.every().tuesday.at("13:00").do(open_chat)
+schedule.every().wednesday.at("13:00").do(open_chat)
+schedule.every().thursday.at("13:00").do(open_chat)
+schedule.every().friday.at("13:00").do(open_chat)
 
 def schedule_checker():
     while True:

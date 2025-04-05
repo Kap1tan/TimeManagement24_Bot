@@ -7,7 +7,7 @@ from datetime import datetime
 import pytz
 
 # Константы
-BOT_TOKEN = "8042834324:AAF8OI-FrONvnEc2EpALNYulq7zIvXXbbm8"
+BOT_TOKEN = "8042834324:AAGOiIjWcGKckps2ZSbvjMW1A7u00hvJPNc"
 ADMIN_IDS = {804644988, 1465809468}  # ID админов
 krasnoyarsk_tz = pytz.timezone('Asia/Krasnoyarsk')  # Часовой пояс не изменился, но время будет уменьшено на 8 часов в функциях
 
